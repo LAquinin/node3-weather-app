@@ -45,21 +45,6 @@ app.get('/help', (req, res)=>{
     })
 })
 
-// // ejemplo para query string
-// app.get('/product', (req,res)=>{
-//     if (!req.query.search){
-//         return res.send({
-//             error: 'you must provide a search term'
-//         })
-//     }
-
-//     console.log(req.query.search)
-//     res.send({
-//         product: [],
-//         search: req.query.search
-//     })
-// })
-
 //Weather page app.com/weather
 app.get('/weather', (req, res)=> {
     if (!req.query.location) {
