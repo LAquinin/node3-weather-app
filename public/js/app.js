@@ -6,7 +6,7 @@ const p2 = document.querySelector('#number2')
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
     
-    p1.textContent = ''
+    p1.textContent = 'Searching...'
     p2.textContent = ''
     const location= searchInput.value
     
